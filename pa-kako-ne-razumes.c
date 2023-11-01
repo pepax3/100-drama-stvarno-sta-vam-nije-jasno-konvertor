@@ -23,10 +23,10 @@ int main() {
         char to_unit[20];
         double value;
 
-        printf("Enter the unit to convert from: ");
+        printf("Unesite jedinicu iz koje konvertujete: ");
         scanf("%s", from_unit);
 
-        printf("Enter the unit to convert to: ");
+        printf("Unesite jedinicu u koju konvertujete: ");
         scanf("%s", to_unit);
 
         printf("Enter the value in %s: ", from_unit);
@@ -37,10 +37,10 @@ int main() {
         if (result >= 0.0) {
             printf("%.2f %s = %.2f %s\n", value, from_unit, result, to_unit);
         } else {
-            printf("Conversion not supported.\n");
+            printf("Konverzija nije podrzana. \n");
         }
 
-        printf("\n\nDo you want to calculate again (Y/N)? \n");
+        printf("\n\nDa li zelite da racunate ponovno Y/N ? \n");
         scanf(" %c", &choice);
 
         // Add extra empty lines after the question
@@ -48,6 +48,6 @@ int main() {
         
     } while (tolower(choice) == 'y');
 
-    printf("Goodbye!\n");
+    printf("Pozdrav roka!\n");
     return 0;
 }
